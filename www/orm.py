@@ -22,7 +22,7 @@ def create_pool(loop,**kw):
         port=kw.get('port', 3306), # MySQL端口号
         user=kw['user'], # 登录用户名
         password=kw['password'], # 登录密码
-        db=kw['db'], # 数据库名
+        db=kw['database'], # 数据库名
         charset=kw.get('charset','utf8'), # 设置连接使用的编码格式utf-8
         autocommit=kw.get('autocommit',True),  # 是否自动提交，默认false
 
